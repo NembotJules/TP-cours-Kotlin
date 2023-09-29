@@ -1,4 +1,4 @@
-//La fonction main avec les arguments...
+//1----------La fonction main avec les arguments...-----------------
 // fun main(args:Array<String>) {
 //     println("Hello, World")
 // }
@@ -9,7 +9,7 @@
 // }
 //Hello Kotlin
 
-//--------Presque tout retourne une valeur en Kotlin----------------
+//2--------Presque tout retourne une valeur en Kotlin----------------
 // val isUnit = println("This is an expression")
 // println(isUnit)
 //=> This is an expression
@@ -23,6 +23,7 @@
 //     println(message)
 //     //=>The water temperature is OK.
 // }
+//3-------CREATION DE FONCTIONS AVEC KOTLIN-----------------
 import java.util.*
 
 // Creating some functions...
@@ -67,6 +68,8 @@ fun randomDay() : String {
 // fun main(args: Array<String>) {
 //     feedTheFish()
 // }
+
+//4---VALEUR PAR DEFAUT ET FONCTION COMPACTE-------------
 
 fun swim(speed: String = "fast") {
    println("swimming $speed")
@@ -122,6 +125,8 @@ fun shouldChangeWater (day: String, temperature: Int = 22, dirty: Int = 20): Boo
 //les valeurs par défaut peuvent aussi etre des fonctions
 //exemple
 fun shouldChangeWater (day: String, temperature: Int = 22, dirty: Int = getDirtySensorReading()): Boolean {}
+
+//5--------Les Filtres-------------------------
 
 //Get started with filters...
 val decorations = listOf ("rock", "pagoda", "plastic plant", "alligator", "flowerpot")
@@ -188,7 +193,7 @@ println("Flat: ${mylist.flatten()}")
 //=> filtered: kotlin.sequences.FilteringSequence@386cc1c4
 //=> new list: [pagoda, plastic plant]
 
-//6. Get started with lambdas and higher-order functions
+//-------6. Get started with lambdas and higher-order functions----------//
 
 var dirtyLevel = 20
 val waterFilter = { dirty : Int -> dirty / 2}
