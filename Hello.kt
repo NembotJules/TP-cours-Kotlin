@@ -188,3 +188,24 @@ println("Flat: ${mylist.flatten()}")
 //=> filtered: kotlin.sequences.FilteringSequence@386cc1c4
 //=> new list: [pagoda, plastic plant]
 
+//6. Get started with lambdas and higher-order functions
+
+var dirtyLevel = 20
+val waterFilter = { dirty : Int -> dirty / 2}
+println(waterFilter(dirtyLevel))
+val waterFilter: (Int) -> Int = { dirty -> dirty / 2 }
+//⇒ 10
+fun updateDirty(dirty: Int, operation: (Int) -> Int): Int {
+   return operation(dirty)
+}
+val waterFilter: (Int) -> Int = { dirty -> dirty / 2 }
+println(updateDirty(30, waterFilter))
+//⇒ 15
+fun increaseDirty( start: Int ) = start + 1
+
+println(updateDirty(15, ::increaseDirty))
+//⇒ 16
+var dirtyLevel = 19
+dirtyLevel = updateDirty(dirtyLevel) { dirtyLevel -> dirtyLevel + 23}
+println(dirtyLevel)
+//⇒ 42
