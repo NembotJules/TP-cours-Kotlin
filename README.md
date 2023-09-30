@@ -15,5 +15,5 @@ Repo pour les TP de developement mobile avec Kotlin
 
 <h1>Description</h1>
 <p>Chaque commit represente une section du TP, chaque commit a pour message la section du TP correspondante.</p>
-<p>Les sections sont presentes dans le fichier </p>
+<p>Les sections sont presentes dans le fichier Hello.kt elles sont commentées, mais chaque section est identifiable par son titre </p>
 
