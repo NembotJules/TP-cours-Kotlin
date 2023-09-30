@@ -13,3 +13,7 @@ Repo pour les TP de developement mobile avec Kotlin
   </tr>
 </table>
 
+<h1>Description</h1>
+<p>Chaque commit represente une section du TP, chaque commit a pour message la section du TP correspondante.</p>
+<p>Les sections sont presentes dans le fichier </p>
+
