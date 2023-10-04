@@ -9,7 +9,7 @@ Repo pour les TP de developement mobile avec Kotlin
   </tr>
    <tr>
     <td>Misericorde Massoma</td>
-    <td>19G00...</td>
+    <td>19G00143</td>
   </tr>
 </table>
 
