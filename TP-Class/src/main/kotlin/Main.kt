@@ -2,6 +2,8 @@
 
 
 import example.myapp.Aquarium
+import example.myapp.Plecostomus
+import example.myapp.Shark
 
 fun buildAquarium() {
  //val aquarium1 = Aquarium()
@@ -29,4 +31,15 @@ fun buildAquarium() {
 
 fun main() {
     buildAquarium()
+    makeFish()
+}
+//importation des classes abstraites de AquariumFish
+fun makeFish() {
+    val shark = Shark()
+    val pleco = Plecostomus()
+    // appel de la methode eat()
+    println("Shark: ${shark.color}")
+    shark.eat()
+    println("Plecostomus: ${pleco.color}")
+    pleco.eat()
 }
