@@ -1,5 +1,5 @@
 package example.myapp
-//step4
+//step3 debut
 
 //Creer un singleton
 object GoldColor : FishColor {
@@ -26,11 +26,12 @@ class PrintingFishAction(val food: String) : FishAction {
         println(food)
     }
 }
-//Ajouter une delegation interface pour FishAction
-class Plecostomus (fishColor: FishColor = GoldColor):
-    FishAction by PrintingFishAction("eat algae"),
-    FishColor by fishColor
-
+//Ajouter une delegation interface pour FishColor
+class Plecostomus:  FishAction, FishColor by GoldColor {
+    override fun eat() {
+        println("eat algae")
+    }
+}
 //creer une interface FishAction
 interface FishAction  {
     fun eat()
