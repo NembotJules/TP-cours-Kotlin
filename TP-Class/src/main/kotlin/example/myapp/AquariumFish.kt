@@ -1,19 +1,26 @@
 package example.myapp
+//step1 et step2
 
-//creation de classe abstraite
-abstract class AquariumFish {
-    abstract val color: String
-
+//Creer un singleton
+object GoldColor : FishColor {
+    override val color = "gold"
 }
-//Ajout de FishAction dans chaque subclasse
-class Shark: AquariumFish(), FishAction {
+
+
+//CREER UNE NOUVELLE INTERFACE
+interface FishColor {
+    val color: String
+}
+//Changement de la classe Shark pour implementer une interface FishColor
+//
+class Shark:FishAction, FishColor {
     override val color = "grey"
     override fun eat() {
         println("hunt and eat fish")
     }
 }
-
-class Plecostomus: AquariumFish(), FishAction{
+//Changement de la classe plecostomus pour implementer une interface FishColor
+class Plecostomus: FishAction, FishColor {
     override val color = "gold"
     override fun eat() {
         println("eat algae")
