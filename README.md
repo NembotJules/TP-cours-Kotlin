@@ -17,3 +17,6 @@ Repo pour les TP de developement mobile avec Kotlin
 <p>Chaque commit represente une section du TP, chaque commit a pour message la section du TP correspondante.</p>
 <p>Les sections sont presentes dans le fichier Hello.kt elles sont commentées, mais chaque section est identifiable par son titre </p>
 
+<h1> Projet Final--------- The News App------------</h1>
+<p> The news app une application qui permet de suivre l'actualité, les news</p>
+<p> API utilisée: <a href = "https://newsapi.org/"> API</a></p>
